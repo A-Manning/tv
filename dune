@@ -1,0 +1,11 @@
+(executable
+  (name tv)
+  (public_name tv)
+  (package tv)
+  (libraries
+    core
+    ctypes
+    ctypes.foreign)
+  (foreign_stubs (language c) (names stubs))
+  (flags :standard -cclib -lcec)
+)
